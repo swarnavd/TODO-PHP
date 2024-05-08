@@ -4,8 +4,7 @@ require_once __DIR__ . '/Dotenv.php';
 /**
  * Connection class to establish database connection.
  */
-class Connection
-{
+class Connection {
   /**
    * Conn variable use here to know if the database is Connected or not and
    * it return true or false.
@@ -13,6 +12,9 @@ class Connection
    * @var \PDO $conn
    */
   public $conn;
+  /**
+   * Constructor to initialize connection with database.
+   */
   public function __construct() {
     $env = new Dotenv();
     try {

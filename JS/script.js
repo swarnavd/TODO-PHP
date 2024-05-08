@@ -41,10 +41,10 @@ $(document).ready(function (){
   $(document).on('click', '.mark', function () {
     let parent = $(this).parent();
     let grand = parent.parent();
-    console.log(grand);
     // Added strike class when user marked it as done.
     grand.addClass("strike");
   })
+
 /**
  * This function edit a particular task when user clicks on edit button.
  */
